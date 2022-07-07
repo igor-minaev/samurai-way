@@ -1,9 +1,9 @@
 import React from 'react';
 import s from './Post.module.css';
-import {PostType} from "../../../../index";
+import {PostType} from "../../../../redux/state";
 
 
-const Post: React.FC<PostType> = ({message,likesCount}) => {
+const Post: React.FC<PostType> = ({message, likesCount}) => {
     return (
         <div className={s.item}>
             <img

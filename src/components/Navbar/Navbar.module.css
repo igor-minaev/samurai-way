@@ -13,3 +13,20 @@
 .item a.activeLink {
     color: gold;
 }
+
+.friends{
+    display: flex;
+    justify-content: space-between;
+}
+
+.friend{
+    text-align: center;
+    color:white;
+    font-size: 10px;
+}
+
+.friend img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

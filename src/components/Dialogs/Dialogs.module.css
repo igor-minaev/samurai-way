@@ -1,9 +1,12 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
+;
 }
 
 .dialogsItems {
+    display: grid;
+    grid-row-gap:5px ;
     padding: 10px;
     color: white;
 }
@@ -13,7 +16,15 @@
 }
 
 .dialog {
+    display: flex;
+    align-items: center;
+}
 
+.dialog img {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 .messages {
