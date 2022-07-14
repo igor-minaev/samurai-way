@@ -13,6 +13,11 @@ const Dialogs: React.FC<DialogsPropsType> = ({state}) => {
     let dialogsElements = state.dialogs.map(d => <DialogItem name={d.name} id={d.id} link={d.link}/>)
 
     let messagesElements = state.messages.map(m => <Message message={m.message}/>)
+    let newDialogElement = React.createRef<HTMLTextAreaElement>()
+    let addMessage = () => {
+        let textMessage = newDialogElement.current?.value
+        alert(textMessage)
+    }
 
     return (
         <div className={s.dialogs}>
@@ -21,6 +26,12 @@ const Dialogs: React.FC<DialogsPropsType> = ({state}) => {
             </div>
             <div className={s.messages}>
                 {messagesElements}
+                <div>
+                    <textarea ref={newDialogElement}></textarea>
+                </div>
+                <div>
+                    <button onClick={addMessage}>Add message</button>
+                </div>
             </div>
         </div>
     );

@@ -5,7 +5,7 @@ import {MessageType} from "../../../redux/state";
 
 const Message: React.FC<MessageType> = ({message}) => {
     return (
-        <div className={s.message}>{message}</div>
+            <div className={s.message}>{message}</div>
     )
 }
 
