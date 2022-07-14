@@ -6,16 +6,17 @@ import {PostType} from "../../../redux/state";
 
 type MyPostsPropsType = {
     posts: Array<PostType>
+    addPostCallback: (postText:string) => void
 }
-const MyPosts: React.FC<MyPostsPropsType> = ({posts}) => {
+const MyPosts: React.FC<MyPostsPropsType> = (props) => {
 
-    let postsElements = posts.map(p => <Post message={p.message} likesCount={p.likesCount}/>)
+    let postsElements = props.posts.map(p => <Post message={p.message} likesCount={p.likesCount}/>)
 
     let newPostElement = React.createRef<HTMLTextAreaElement>()
 
     let addPost = () => {
-        let text = newPostElement.current?.value
-        alert(text)
+        if(newPostElement.current)
+        props.addPostCallback(newPostElement.current.value)
     }
 
     return (

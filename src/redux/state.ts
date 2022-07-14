@@ -18,7 +18,7 @@ export type MessageType = {
 export type FriendType = {
     id: number
     name: string
-    link:string
+    link: string
 }
 
 
@@ -88,10 +88,31 @@ let state: StateType = {
         ]
     },
     sidebar: [
-        {id: 1, name: 'Dimych',link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6vjzwZaBf6bKmbl7I00WbZ9RPOlriawksgQ&usqp=CAU"},
-        {id: 2, name: 'Andrey',link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6vjzwZaBf6bKmbl7I00WbZ9RPOlriawksgQ&usqp=CAU"},
-        {id: 3, name: 'Sveta',link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6vjzwZaBf6bKmbl7I00WbZ9RPOlriawksgQ&usqp=CAU"}
+        {
+            id: 1,
+            name: 'Dimych',
+            link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6vjzwZaBf6bKmbl7I00WbZ9RPOlriawksgQ&usqp=CAU"
+        },
+        {
+            id: 2,
+            name: 'Andrey',
+            link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6vjzwZaBf6bKmbl7I00WbZ9RPOlriawksgQ&usqp=CAU"
+        },
+        {
+            id: 3,
+            name: 'Sveta',
+            link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6vjzwZaBf6bKmbl7I00WbZ9RPOlriawksgQ&usqp=CAU"
+        }
     ]
+}
+
+export const addPost = (postText: string) => {
+    const newPost: PostType = {
+        id: new Date().getTime(),
+        message: postText,
+        likesCount: 0
+    }
+    state.profilePage.posts.push(newPost)
 }
 
 export default state;
