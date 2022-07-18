@@ -20,7 +20,6 @@ type AppPropsType = {
 
 const App: React.FC<AppPropsType> = (props) => {
     return (
-        <BrowserRouter>
             <div className='app-wrapper'>
                 <Header/>
                 <Navbar sidebar={props.state.sidebar}/>
@@ -33,7 +32,6 @@ const App: React.FC<AppPropsType> = (props) => {
                     <Route path='/settings' render={() => <Settings/>}/>
                 </div>
             </div>
-        </BrowserRouter>
 
 
     );

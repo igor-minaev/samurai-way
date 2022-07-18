@@ -5,7 +5,7 @@ import {DialogItemType} from "../../../redux/state";
 
 
 const DialogItem: React.FC<DialogItemType> = (props) => {
-    let path = `/dialogs/${props.id}`
+    const path = `/dialogs/${props.id}`
     return (
         <div className={s.dialog + ' ' + s.active}>
             <img src={props.link} alt=""/>
