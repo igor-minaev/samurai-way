@@ -9,7 +9,9 @@ function App() {
         <div className="app-wrapper">
             <Header/>
             <Navbar/>
+            <div className="content">
             <Profile/>
+            </div>
         </div>
     );
 }

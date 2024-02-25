@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Profile = () => {
     return (
-        <div className="content">
+        <div>
             <div>
                 <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3JsSpz98fRY-Gi2gSyV5cvM9Q1cBV5hcNKQ&usqp=CAU"
@@ -23,6 +23,7 @@ export const Profile = () => {
                 <div>post 3</div>
             </div>
         </div>
+
     );
 };
 
