@@ -9,22 +9,9 @@
             'n c';
 }
 
-.header {
-    grid-area: h;
-    background-color: aquamarine;
-}
 
-.header img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 50%;
-}
 
-.nav {
-    grid-area: n;
-    background-color: mediumpurple;
-}
+
 
 .content {
     grid-area: c;
