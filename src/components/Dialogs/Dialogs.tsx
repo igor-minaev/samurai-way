@@ -7,11 +7,18 @@ type DialogItemType = {
     name: string
 }
 
+type MessageType = {
+    message: string
+}
+
 const DialogItem = (props: DialogItemType) => {
     const path = `/dialogs/${props.id}`
     return <div className={s.dialog + ' ' + s.active}>
         <NavLink to={path} activeClassName={s.activeLink}>{props.name}</NavLink>
     </div>
+}
+const Message = (props: MessageType) => {
+    return <div className={s.message}>{props.message}</div>
 }
 
 export const Dialogs = () => {
@@ -26,9 +33,9 @@ export const Dialogs = () => {
                 <DialogItem id="6" name="Valera"/>
             </div>
             <div className={s.messages}>
-                <div className={s.message}>Hi</div>
-                <div className={s.message}>Hello</div>
-                <div className={s.message}>Yo</div>
+                <Message message="Hi"/>
+                <Message message="Hello, friend"/>
+                <Message message="Yo"/>
             </div>
         </div>
     );
