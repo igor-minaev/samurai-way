@@ -7,22 +7,22 @@ export const Dialogs = () => {
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
                 <div className={s.dialog + ' ' + s.active}>
-                    <NavLink>Dimych</NavLink>
+                    <NavLink to="/dialogs/1" activeClassName={s.activeLink}>Dimych</NavLink>
                 </div>
                 <div className={s.dialog}>
-                    Andrey
+                    <NavLink to="/dialogs/2" activeClassName={s.activeLink}>Andrey</NavLink>
                 </div>
                 <div className={s.dialog}>
-                    Sveta
+                    <NavLink to="/dialogs/3" activeClassName={s.activeLink}>Sveta</NavLink>
                 </div>
                 <div className={s.dialog}>
-                    Sasha
+                    <NavLink to="/dialogs/4" activeClassName={s.activeLink}>Sasha</NavLink>
                 </div>
                 <div className={s.dialog}>
-                    Viktor
+                    <NavLink to="/dialogs/5" activeClassName={s.activeLink}>Viktor</NavLink>
                 </div>
                 <div className={s.dialog}>
-                    Valera
+                    <NavLink to="/dialogs/6" activeClassName={s.activeLink}>Valera</NavLink>
                 </div>
             </div>
             <div className={s.messages}>
