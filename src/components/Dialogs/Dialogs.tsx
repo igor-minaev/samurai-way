@@ -31,6 +31,7 @@ export const Dialogs = () => {
         {id: '5', name: 'Viktor'},
         {id: '6', name: 'Valera'}
     ]
+    const dialogElements: JSX.Element[] = dialogsData.map(dialog => <DialogItem id={dialog.id} name={dialog.name}/>)
     const messagesData: MessageType[] = [
         {id: '1', message: 'Hi'},
         {id: '2', message: 'Hello, friend'},
