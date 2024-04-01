@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './../Dialogs.module.css'
-import {MessageType} from '../Dialogs';
+import {MessageType} from '../../../index';
 
 
 export const Message = (props: MessageType) => {
