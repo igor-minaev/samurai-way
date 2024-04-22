@@ -4,11 +4,36 @@
     padding: 20px;
 }
 
-.item a{
+.item a {
     color: white;
     text-decoration: none;
 }
 
 .item a.activeLink {
     color: gold;
+}
+
+.friends{
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+.friendsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.friends img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.friend{
+    text-align: center;
+    width: 45px;
+}
+
+.friend p{
+    margin: 0;
 }
