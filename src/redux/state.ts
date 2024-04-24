@@ -58,3 +58,12 @@ export const state: StateType = {
         ]
     }
 }
+
+export const addPost = (message: string) => {
+    const newPost: PostType = {
+        id: '5',
+        message,
+        likesCount: 0
+    }
+    state.profilePage.posts.push(newPost)
+}
